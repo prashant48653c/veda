@@ -9,6 +9,8 @@
   --workSans: "Work Sans", sans-serif;
   --montserrat: "Montserrat", sans-serif;
   --grey:#696F8C;
+  --border:.1px solid #E6E6E6;
+  --light:#FBEFE9;
 }
 
 * {

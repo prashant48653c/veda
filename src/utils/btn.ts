@@ -7,3 +7,11 @@ export const AboutBtn={
 export const ServiceBtn={
     text:'View All Cause'
 }
+export const AmountBtn={
+    text:'Donate Now',
+    pad:'1rem 2.5rem'
+}
+export const EventBtn={
+    text:'View All'
+ 
+}

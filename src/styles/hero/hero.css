@@ -57,7 +57,7 @@
 
 .buttons-round{
     display: flex;
- 
+ cursor: pointer;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
@@ -65,8 +65,24 @@
     left: 5%;
     top: 38%;
 }
+.buttons-circle{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.btn-circle{
+ cursor: pointer;
+
+    padding: 1rem;
+    border-radius: 33rem;
+    outline: none;
+    border: none;
+    background:var(--tertiary);
+}
 
 .btn-round {
+ cursor: pointer;
+
     border-radius: 33rem;
     outline: none;
     border: none;
