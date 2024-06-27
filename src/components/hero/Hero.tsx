@@ -1,6 +1,6 @@
 import Image from "next/image"
 import '../../styles/hero/hero.css'
-import { AboutBtn } from "@/types/btn.types"
+import { AboutBtn } from "@/utils/btn"
 import Button from "../button/Button"
 const Hero = () => {
 return (

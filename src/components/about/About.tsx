@@ -1,9 +1,9 @@
  import '@/styles/about/about.css'
 import Heading from '../heading/Heading'
-import {  headingProps } from "@/types/heading.types"
+import {  headingProps } from "@/utils/heading"
 import Image from 'next/image'
 import Button from '../button/Button'
-import { DonationBtn } from '@/types/btn.types'
+import { DonationBtn } from '@/utils/btn'
 
 
 const About: React.FC = () => {
