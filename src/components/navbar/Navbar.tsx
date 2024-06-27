@@ -5,12 +5,13 @@ import NavButtons from './NavButtons'
 const Navbar: React.FC = () => {
     return (
         <nav className='nav'>
-            <div className='logo'>
-<h1 className='logo-name'>Paw Prints</h1>
-            </div>
-          
+            <div className='logo-nav'>
+                <h1 className='logo-name'>Paw Prints</h1>
+            
+
             <Links />
-            <NavButtons/>
+            </div>
+            <NavButtons />
         </nav>
     )
 }

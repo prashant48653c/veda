@@ -1,10 +1,12 @@
+import { HeadingProp } from "@/types/heading.types"
+
  
-const Heading:React.FC = () => {
+const Heading:React.FC<HeadingProp> = ({head,semiHead,desc}) => {
   return (
     <div className='heading'>
-        <h6>Who we are and our mission</h6>
-        <h3>Testimonials</h3>
-        <p>We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities.</p>
+        <h6>{semiHead}</h6>
+        <h3>{head}</h3>
+        <p>{desc}</p>
     </div>
   )
 }

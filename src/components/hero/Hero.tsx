@@ -1,5 +1,7 @@
 import Image from "next/image"
-import './hero.css'
+import '../../styles/hero/hero.css'
+import { AboutBtn } from "@/types/btn.types"
+import Button from "../button/Button"
 const Hero = () => {
 return (
 <section className="hero-section">
@@ -12,7 +14,7 @@ return (
 <h2>Saving lives of cats and dogs across world</h2>
 <p>We advocate for vulnerable animals, providing safety while promoting responsible pet ownership. We uplift both animals and communities.</p>
 </div>
-<button className="btn btn-fill">About Us</button>
+<Button {...AboutBtn}/>
 </div>
 
 <div className="hero-image">
