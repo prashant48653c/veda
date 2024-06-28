@@ -3,3 +3,9 @@ export interface ServiceType{
     img:string;
     desc:string;
 }
+
+export interface AuthorData{
+    fullName:string;
+    content:string;
+    imagePath:string;
+}

@@ -1,33 +1,78 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
-.link-boxs{
-    display: flex;
+.outro{
+    text-align: left;
+    width: 100%;
+    padding: 0 3rem;
     
+}.outro h2{
+    font-family: var(--oleoScript);
+    font-size: 1.8rem;
 }
-.link-box{
-    width: 20.6875rem; 
-display: flex;
-flex-direction: column;
+
+.link-boxs {
+    display: flex;
+
 }
-.footer .links{
+
+.link-box {
+    width: 20.6875rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-box p {
+    font-size: 1.2rem;
+
+}
+
+.link-box .flex {
+    width: 6rem;
+    padding: 1.5rem 0;
+    gap: 2rem;
+}
+
+.footer .f-links {
     display: flex;
     gap: .75rem;
+    
+    text-align: left;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
 }
-.links .link{
+
+.f-links .f-link {
     font-size: 1.2rem;
+    color: #353333;
+   
+    
+    text-decoration: none;
 }
-.footer h6{
+
+.footer h6 {
     padding-bottom: 1.5rem;
     color: #353333;
-font-family: var(--monsterrat);
-font-size: 1.325rem;
- 
-font-weight: 500;
-line-height: 130%; 
- 
+    font-family: var(--monsterrat);
+    font-size: 1.325rem;
+
+    font-weight: 500;
+    line-height: 130%;
+
+}
+
+.credits {
+    display: flex;
+    width: 100%;
+    padding-bottom: 3rem;
+    justify-content: space-between;
+    font-size: 1.125rem;
+}
+
+.credits div {
+    display: flex;
+    gap: 2.5rem;
 }

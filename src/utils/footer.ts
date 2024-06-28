@@ -2,7 +2,7 @@ import { footerType } from "@/types/footer.types";
 
 export const footerData:footerType[]=[
     {
-        head:'QUICK LINES',
+        head:'QUICK LINKS',
         links:['About us','Get Involved','Contact Us','Media']
     },
     {
