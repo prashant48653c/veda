@@ -29,3 +29,49 @@ padding-bottom: 3rem;
 height: 26.875rem; 
 flex-shrink: 0; 
 }
+
+
+@media (max-width:888px) {
+    .about{
+        justify-content: center;
+        gap: 4rem;
+    }
+    .about-img {
+        width: 34.6875rem;
+        height: 22.875rem;
+       
+      }
+
+}
+@media (max-width:750px) {
+    .about {
+        justify-content: center;
+        gap: 0rem;
+      }
+      
+}
+
+@media (max-width:700px) {
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-img{
+        width: 50rem;
+        height: 30rem;
+    }
+      .about-text{
+        margin-top: 2rem;
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+      }
+
+      .aboutimage{
+        order: 1;
+      }
+}

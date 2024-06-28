@@ -1,11 +1,22 @@
 .banner{
 background-color: var(--tertiary);
-padding: 3.5rem;
+padding: 0 12rem 3.5rem 17rem;
 display: flex;
 flex-direction: column;
 gap: 3rem;
+width: 100%;
+overflow: hidden;
+ height: 26.4rem;
+ position: relative;
  
- 
+}
+.banner-container{
+    
+    
+   
+     display: flex;
+     justify-content: center;
+
 }
 .banner-detail{
     display: flex;
@@ -21,6 +32,7 @@ gap: 3rem;
     width: 60rem;
     text-align: center;
     padding-bottom: .4rem;
+    
 line-height: 180%; /* 2.025rem */
 }
 .banner-detail h3{
@@ -34,7 +46,46 @@ line-height: 180%; /* 2.025rem */
 .banner-detail .flex{
     gap: 1rem;
 }
+ .wave img{
+    position: absolute;
+    top: 30%;
+    left: 85%;
+    width: 12.75rem;
+    height: 20.4375rem;
+    flex-shrink: 0;
+    z-index: 11; 
+    overflow: hidden;
+   
+ }
+ .wave::before{
+  
+    content: '';
+    border-radius: 33rem;
+    border: 4.4rem solid #A8D5BA;
+    position: absolute;
+    top: 55%;
+    left: 81%;
+    padding: 9rem;
+ }
+ .wave2::before{
+    position: absolute;
+top: -40%;
+padding: 9rem;
+left: -11%;
 
+ }
+.wave2 img{
+    top: 19%;
+    left: 1%; 
+    width: 24.5625rem;
+    height: 22.5625rem;
+    flex-shrink: 0;
+}
+.wave-box{
+    position: relative;
+    width: 100%;
+    
+}
 
 
 /* Poster Styling  */
@@ -59,6 +110,8 @@ line-height: 180%; /* 2.025rem */
      font-family: var(--workSans);
     font-size: 1rem;
     width: 17rem;
+    border: none;
+    outline: none;
  
  
     line-height: 1.5rem; /* 150% */
@@ -73,4 +126,53 @@ line-height: 180%; /* 2.025rem */
 .poster-text p{
     font-size: 1rem;
     padding-top: .5rem;
+}
+
+
+/* Media Queries  */
+@media (max-width:870px) {
+    .banner-detail .flex{
+     flex-direction: column;
+    }
+     
+    .banner-detail p{
+        width: 50rem;
+    }
+       .poster{
+        justify-content: space-around;
+       }
+   
+   }
+
+@media (max-width:870px) {
+     .banner{
+        padding: 0 8rem;
+        margin-top: 7rem;
+     }
+}
+
+@media (max-width:650px) {
+    .poster{
+        justify-content: center;
+        gap: 6rem;
+       padding: 2.4rem 11rem;
+       
+    }
+}
+
+@media (max-width:500px) {
+    .poster{
+        justify-content: center;
+        gap: 2rem;
+       
+       
+    }
+}
+
+@media (max-width:450px) {
+    .poster{
+       flex-direction: column;
+       
+       
+    }
 }

@@ -49,3 +49,16 @@ line-height: 130%;
 .events{
     gap: 2rem;
 }
+
+
+/* Media Queries */
+
+@media (max-width:870px) {
+   
+    .events{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+       
+   
+   }

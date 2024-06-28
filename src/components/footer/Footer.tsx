@@ -10,6 +10,7 @@ return (
 <div className="outro">
 <h2>Pawprints</h2>
 </div>
+
 <div className="link-boxs">
 {
 footerData.map((item,i)=>{
@@ -42,6 +43,7 @@ return(
       </div>
     </div>
 </div>
+
 <hr />
 <div className="credits">
  

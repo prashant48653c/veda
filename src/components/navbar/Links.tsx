@@ -1,30 +1,33 @@
 'use client'
 import { LinksType } from '@/types/navbar.types'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
+
+export const links:LinksType[]=[
+    {
+        name:'Campaigns & Topics',
+        route:'/home'
+    },
+     {
+        name:'Animals',
+        route:'/animal'
+    },
+    {
+        name:'About Us',
+        route:'/about'
+    },
+    {
+        name:'Contact',
+        route:'/contact'
+    }
+    
+]
 const Links:React.FC = () => {
 
     
-    const links:LinksType[]=[
-        {
-            name:'Campaigns & Topics',
-            route:'/home'
-        },
-         {
-            name:'Animals',
-            route:'/animal'
-        },
-        {
-            name:'About Us',
-            route:'/about'
-        },
-        {
-            name:'Contact',
-            route:'/contact'
-        }
-        
-    ]
+    
 
     const router=useRouter()
     const handleRoute=(link:LinksType)=>{
@@ -34,7 +37,10 @@ const Links:React.FC = () => {
     <ul className='links' >
         {
             links.map((link,i)=>{
-                return <li onClick={()=>handleRoute(link)} className='link' key={i}>{link.name}</li>
+                return <li onClick={()=>handleRoute(link)} className='link' key={i}>
+                    {link.name}
+                    <Image src={'/chevrondown.svg'} alt='chevron' width={20} className='chevs' height={20} />
+                    </li>
             })
         }
 

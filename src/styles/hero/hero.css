@@ -1,6 +1,6 @@
 .hero-section {
     display: flex;
-    border: 1px solid green;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 6.5rem 0;
@@ -62,8 +62,8 @@
     gap: 1rem;
     align-items: center;
     position: absolute;
-    left: 5%;
-    top: 38%;
+    left: 7%;
+    top: 42%;
 }
 .buttons-circle{
     display: flex;
@@ -89,3 +89,34 @@
     padding: 1rem;
     background: rgba(255, 255, 255, 0.50);
 }
+
+@media (max-width:880px) {
+   
+  .hero-section{
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
+@media (max-width:700px) {
+   
+    .hero-section{
+       flex-direction: column;
+    }
+    .hero-intro{
+        order: 2;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+     .hero-intro h2, .hero-intro p,.hero-intro h6{
+        text-align: center;
+     }
+    .hero-image{
+        order: 1;
+    }
+    .hero-btn{
+        display: flex;
+        justify-content: center;
+    }
+  }

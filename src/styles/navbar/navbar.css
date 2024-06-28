@@ -6,11 +6,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    z-index: 11111;
     border-radius: 1.2rem;
     position: sticky;
     top: 4rem;
-    
+
 
 }
 
@@ -42,6 +42,9 @@
 .nav .link {
     padding: .5rem 1.5rem;
     cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    gap: .3rem;
     font-family: var(--workSans)
 }
 
@@ -53,3 +56,92 @@
     display: flex;
     gap: 1rem;
 }
+.mob{
+  display: none;
+}
+
+@media (max-width:880px) {
+    .nav{
+      max-width: 74rem;
+    }
+    }
+
+    @media (max-width:750px) {
+        .nav{
+          max-width: 70rem;
+        }
+        .nav .link{
+            padding: 1rem .5rem;
+        }
+        }
+
+        @media (max-width:700px) {
+            .nav{
+                max-width: 65rem;
+              }
+              .mob{
+                display: block;
+              }
+              .nav .link{
+                  padding: 01rem .1rem;
+              }
+              .nav .links {
+              border-left: none;
+            }
+        }
+
+        @media (max-width:700px) {
+            .nav{
+                max-width: 50rem;
+              }
+              .nav .links{
+                display: none;
+              }
+              .logo-nav{
+                display: none;
+              }
+              .mob-nav{
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+              }
+             
+              .mob-nav h1{
+                font-family: var(--oleoScript);
+                font-size: 1.4rem;
+              }
+              .mob-links{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                list-style: none;
+                position: absolute;
+                width: 100%;
+                right: 10%;
+                top: 100%;
+                border-radius: 2rem;
+                padding: 4rem 2rem;
+                left: 0%;
+                font-family: var(--workSans);
+                background-color: var(--primary);
+                 
+              }
+              .mob-link{
+                color: rgb(79, 77, 77);
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 2rem;
+              }
+              .mob-link:hover{
+                text-decoration: underline;
+              }
+              
+             
+            }
+
+            @media (max-width:500px) {
+                .nav{
+                    max-width: 40rem;
+                }
+            }

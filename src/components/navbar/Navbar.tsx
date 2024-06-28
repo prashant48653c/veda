@@ -1,7 +1,8 @@
 import '../../styles/navbar/navbar.css'
 import Links from './Links'
+import MobNav from './MobNav';
 import NavButtons from './NavButtons'
-
+import { MdOutlineMenu } from "react-icons/md";
 const Navbar: React.FC = () => {
     return (
         <nav className='nav'>
@@ -10,7 +11,10 @@ const Navbar: React.FC = () => {
             
 
             <Links />
+          
+            
             </div>
+            <MobNav/>
             <NavButtons />
         </nav>
     )

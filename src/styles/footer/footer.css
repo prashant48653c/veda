@@ -48,9 +48,10 @@
 .f-links .f-link {
     font-size: 1.2rem;
     color: #353333;
-   
-    
     text-decoration: none;
+}
+.f-link:hover{
+    text-decoration: underline;
 }
 
 .footer h6 {
@@ -75,4 +76,89 @@
 .credits div {
     display: flex;
     gap: 2.5rem;
+}
+
+
+
+@media (max-width:1000px) {
+    .credits{
+        padding: 1rem 6rem;
+    }
+.link-boxs{
+    width: 80rem;
+}
+.footer{
+    width: 80rem;
+}
+.outro{
+    padding: 1rem 0;
+}
+}
+
+@media (max-width:780px) {
+    .link-boxs{
+        width: 70rem;
+    }
+    .footer{
+        width: 70rem;
+    }
+}
+@media (max-width:700px) {
+    .credits{
+        padding: 1rem 9rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .link-boxs{
+        width:65rem;
+    }
+    .footer{
+        width: 65rem;
+    }
+    
+   
+  
+}
+
+
+@media (max-width:650px) {
+    
+    .link-boxs{
+        width:50rem;
+    }
+    .footer{
+        width: 50rem;
+    }
+    
+   
+  
+}
+
+
+@media (max-width:500px) {
+      
+     .outro h2{
+        text-align: center;
+     }
+    .link-boxs{
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .f-links {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+     
+    
+   .link-box p{
+    text-align: center;
+   }
+  
 }

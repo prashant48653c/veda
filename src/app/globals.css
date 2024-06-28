@@ -18,7 +18,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+ 
 body {
   overflow-x: hidden;
   /* background-color: var(--secondary); */
@@ -29,12 +29,12 @@ body {
 }
 
 .main {
-
+ 
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: var(--secondary); */
+  width: 100%;
 }
 
 .hero-nav {
@@ -113,6 +113,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 
 .flex {
@@ -129,3 +130,73 @@ hr{
   width: 100%;
   color: #696F8C;
 }
+
+
+/* Media Queries */
+
+@media (max-width:1500px) {
+  html{
+    font-size: 95%;
+  }
+  .side{
+    display: none;
+  }
+}
+
+@media (max-width:1400px) {
+  html{
+    font-size: 90%;
+  }
+}
+
+@media (max-width:1350px) {
+  html{
+    font-size: 85%;
+  }
+  .chevs{
+    max-width: 1rem;
+    max-height: 1rem;
+  }
+}
+
+@media (max-width:1250px) {
+  html{
+    font-size: 80%;
+  }
+}
+
+@media (max-width:1200px) {
+  html{
+    font-size: 75%;
+  }
+ 
+}
+
+@media (max-width:1100px) {
+  html{
+    font-size: 70%;
+  }
+
+}
+
+@media (max-width:1020px) {
+  html{
+    font-size: 65%;
+  }
+}
+
+@media (max-width:950px) {
+  html{
+    font-size: 60%;
+  }
+}
+
+@media (max-width:700px) {
+ .heading{
+  width: 40rem;
+ }
+}
+
+
+
+
