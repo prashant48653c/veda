@@ -19,7 +19,7 @@ export default function Home() {
         <Navbar />
         <Hero />
       </section>
-      <SideButton />
+     
       <About/>
       <section className="section-service">
       <Service/>
